@@ -1,29 +1,20 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Users from "./pages/Users";
-import Products from "./pages/Products";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "users",
-    element: <Users />,
-  },
-  {
-    path: "products",
-    element: <Products />,
-  },
-]);
+import About from "./pages/About";
+import Layout from "./layout/Layout";
+// import Users from "./pages/Users";
+// import Products from "./pages/Products";
 
 function App() {
   return (
-    <main className="flex h-screen">
-      {/* <RouterProvider router={router} /> */}
-      test
-    </main>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 

@@ -9,7 +9,8 @@
     "paths": {
       "@/*": [
         "./src/*"
-      ]
+      ],
+      "@assets/*":["./src/assets/*"]
     },
 
     /* Bundler mode */
