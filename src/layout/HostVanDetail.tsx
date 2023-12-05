@@ -6,7 +6,6 @@ import { ArrowLeftIcon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
 import { Link, Outlet, useParams } from "react-router-dom";
 
-const price = 40;
 const HostVanDetail = () => {
   const [data, setCurrentvan] = useState<TVan>();
   const { id } = useParams();

@@ -61,7 +61,7 @@ const Comment: FC<CommentType> = ({ content, crateedAt, stars, user }) => {
   return (
     <div className="flex flex-col gap-3">
       <div className="flex gap-2">
-        {Array.from({ length: stars }).map((item, index) => (
+        {Array.from({ length: stars }).map((_, index) => (
           <StarFilledIcon key={index} className="h-6 w-6 text-[#FF8C38] " />
         ))}
       </div>

@@ -1,5 +1,4 @@
 import { TVan } from "@/type/van";
-import React from "react";
 import { useOutletContext } from "react-router-dom";
 
 
