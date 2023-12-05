@@ -1,16 +1,14 @@
-import { FC, ReactNode } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { Outlet } from "react-router-dom";
 
-type Props = {
-  children: ReactNode;
-};
-
-const Layout: FC<Props> = ({ children }) => {
+const Layout = () => {
   return (
-    <main>
+    <main className="bg-[#FFF7ED]">
       <Navbar />
-      <main className="">{children}</main>
+      <main className="">
+        <Outlet />
+      </main>
       <Footer />
     </main>
   );

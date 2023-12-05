@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="relative h-max   ">
+    <div className=" hero   ">
       <div className="liner  absolute w-full h-full  -z-10 " />
       <div className="flex flex-col px-8 py-20 gap-8 ">
         <h1 className="text-[#fff] font-extrabold text-4xl ">

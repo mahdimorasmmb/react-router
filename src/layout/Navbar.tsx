@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 
 const navList = [
   {
+    path: "/host",
+    label: "Host",
+  },
+  {
     path: "/about",
     label: "About",
   },
